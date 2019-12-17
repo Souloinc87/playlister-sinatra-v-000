@@ -6,7 +6,10 @@ class SongsController < ApplicationController
   end
 
   get '/songs/:slug' do
-    #binding.pry 
+    @artist = Artist.all
+    @song = Song.all
+    #binding.pry
     erb :'/songs/show'
+    binding.pry 
   end
 end

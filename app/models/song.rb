@@ -8,4 +8,9 @@ class Song < ActiveRecord::Base
     self.name.split(" ").join("-").downcase
     #binding.pry
   end
+
+  def find_by_slug
+    binding.pry
+  end
+
 end
